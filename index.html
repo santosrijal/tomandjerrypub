@@ -1,118 +1,411 @@
-
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>My web page</title>
-	<link rel="icon" href="google.png">
-	<link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-	<header id="header">
-		<div id="top-header">. <br>
-		.</div>
-		<img src="logo.png" alt="Not Found">
- <br>
-	</header>
-	<nav id="nav">
-		<div id="nav-menu">
-			<ul>
-				<li><a href="pages/home.html" target="content">Home</a></li>
-				<li class="has-sub"><a href="pages/courses.html" target="content">Courses</a>
-					<ul>
-						<li><a href="#">Web designing</a>
-							<ul>
-								<li><a href="#">HTML</a></li>
-								<li><a href="#">CSS</a></li>
-								<li><a href="#">JQuery</a></li>
-								<li><a href="#">Bootstrap</a></li>
-								<li><a href="#">Foundnation</a></li>
-							</ul>
-						</li>
-						<li class="has-sub"><a href="#">Web devlopment</a>
-							<ul>
-								<li><a href="#">JavaScript</a></li>
-								<li><a href="#">JQuery</a></li>
-								<li><a href="#">PHP &amp; SQL</a></li>
-								<li><a href="#">Word press</a></li>
-								<li><a href="#">Joomla</a></li>
-								<li><a href="#">ASP.NET</a></li>
-							</ul>
-						</li>
-						<li class="has-sub"><a href="#">Others</a>
-							<ul>
-								<li><a href="#">Graphic</a></li>
-								<li><a href="#">MS Office</a></li>
-								<li><a href="#">Text Editor</a></li>
-								<li><a href="#">SQL Server</a></li>
-								<li><a href="pages/courses.html" target="content">Oracle</a></li>
-							</ul>
-						</li>
-					</ul>
-				</li>
-				<li><a href="pages/tips.html" target="content">Tips &amp; Tricks</a></li>
-				<li class="has-sub"><a href="pages/project.html" target="content">Project</a>
-					<ul>
-						<li><a href="#">CSS</a></li>
-						<li><a href="#">JavaScript</a></li>
-						<li><a href="#">JQuer</a></li>
-						<li><a href="#">PHP</a></li>
-						<li><a href="#">ASP</a></li>
-					</ul>
-				</li>
-				<li><a href="pages/about.html" target="content">About</a></li>
-				<li><a href="pages/contact.html" target="content">Contact</a></li>
-			</ul>
-		</div>
-	</nav>
-	<section id="content">
-		<iframe src="pages/home.html" frameborder="0" name="content">
-		</iframe>
-		<div class="border1"></div>
-		<marquee behavior="" direction="">
-			<p>Welcome to my site</p>
-		</marquee>
-		<div class="border2"></div>
-	</section>
-	<footer class="footer">
-		<div class="f1">
-			<ul>
-				<li>Home</li>
-				<li>Contact</li>
-				<li>Sevices</li>
-				<li>Gallery</li>
-				<li>Projects</li>
-			</ul>
-		</div>
-		<div class="f2">
-			<ul>
-				<li>Home</li>
-				<li>Contact</li>
-				<li>Sevices</li>
-				<li>Gallery</li>
-				<li>Projects</li>
-			</ul>
-		</div>
-		<div class="f3">
-			<div id="footer-img">
-				<img src="img/logo.png" alt="Not Found">
-			</div>
-			<div class="contact">
-				<p>Find us on social media</p>
-				<ul>
-					<li><a href="#"><img src="img/facebook.png" alt=""></a></li>
-					<li><a href="#"><img src="img/twitter.png" alt=""></a></li>
-					<li><a href="https://www.google.com" target="_blank"><img src="img/google.jpeg" alt=""></a></li>
-					<li><a href="#"><img src="img/youtube.png" alt=""></a></li>
-					<li><a href="#"><img src="img/twitter.png" alt=""></a></li>
-				</ul>
-			</div>
-		</div>
-		<div id="copy">
-			<p>Copyrights &amp; 2017 - All rights reserved by myschool.net</p>
-			<p>Desined by: <a href="https://www.facebook.com/messi.fan.10" target="_blank">Santos Rijal</a></p>
-		</div>
-	</footer>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Tom N Jerry</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+        <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+        <link rel = "icon" href = "images/logo.png" type = "image/png">
+    </head>
+    <body>
+        
+        <!-- header -->
+        <header class = "header" id = "header">
+            <div class = "head-top">
+                <div class = "site-name">
+                    <span>Tom N Jerry</span>
+                </div>
+                <div class = "site-nav">
+                    <span id = "nav-btn">MENU <i class = "fas fa-bars"></i></span>
+                </div>
+            </div>
 
-</body>
-</html> 
+            <div class = "head-bottom flex">
+                <h2>Tom N Jerry Pub</h2>
+                <p>Since 1979, Being the one of the oldest pub of Kathmandu we are providing people some nice time to free themselves from there hustling lifestyle. We are somehow the oldest and most fascinating Pub of Nepal.</p>
+                <button type = "button" class = "head-btn">GET STARTED</button>
+            </div>
+        </header>
+        <!-- end of header -->
+
+        <!-- side navbar -->
+        <div class = "sidenav" id = "sidenav">
+            <span class = "cancel-btn" id = "cancel-btn">
+                <i class = "fas fa-times"></i>
+            </span>
+
+            <ul class = "navbar">
+                <li><a href = "#header">home</a></li>
+                <li><a href = "#services">services</a></li>
+                <li><a href = "#rooms">food menu</a></li>
+                <li><a href = "#customers">customers</a></li>
+                <li><a href = "#boo">map</a></li>
+            </ul>
+            <button class = "btn sign-up">sign up</button>
+            <button class = "btn log-in">log in</button>
+        </div>
+        <!-- end of side navbar -->
+
+        <!-- fullscreen modal -->
+        <div id = "modal"></div>
+        <!-- end of fullscreen modal -->
+
+        <!-- body content  -->
+        <section class = "services sec-width" id = "services">
+            <div class = "title">
+                <h2>services</h2>
+            </div>
+            <div class = "services-container">
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                          &nbsp;   <i class = "fas fa-beer"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Alcoholic Bevrages</h2>
+                        <p><ul>
+                            <li>Chilled Beers </li>
+                            <li>Classic Cocktails</li>
+                            <li>Special Cocktail<br><br>
+                               " Nothing ever tasted better than a cold beer on a beautiful afternoon with nothing to look forward for."
+                            </li> 
+      
+                          </ul> 
+                           
+                          </p>
+                        <button type = "button" class = "btn">Have A Sip !</button>
+                    </div>
+                </article>
+                <!-- end of single service -->
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            &nbsp;&nbsp;   &nbsp;<i class = "fas fa-water"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Non-Alcoholic Bevrages</h2>
+                        <p>  <li>Mocktails/Sodas </li>
+                            
+                            <li>Tea/Coffes</li>
+                            <li>Refreshment Drinks<br><br>
+                               "Drink healthy Stay healthy, Enjoy Your Time and Have a great time"
+                            </li> </p>
+                        <button type = "button" class = "btn">Try Once !</button>
+                    </div>
+                </article>
+                <!-- end of single service -->
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                          &nbsp;  <i class = "fas fa-music"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                       <h2>Entertainment</h2>
+                        <p><ul>
+                            <li>Pool Table</li>                                                             
+                            <li>Live Music (Occasionally)</li>
+                            <li>Music of your choice</li> 
+                          
+                            <li>Free Wifi</li>
+                          
+                          </ul> "Music is the language of the spirit. It opens the secret of life bringing peace, abolishing strife."
+                           
+                          </p>
+                        <button type = "button" class = "btn">Feel !</button>
+                    </div>
+                </article>
+                <!-- end of single service -->
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                        &nbsp;&nbsp;&nbsp;    <i class = "fas fa-tree"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Tour Packages</h2>
+                        <p><ul> 
+                            <li>Trekking</li>                                                             
+                            <li>Rafting/Climbing/Jungle Safari</li>
+                            
+                          <li>Free Information </li>
+                          <li>Mountain Biking</li>
+                          “Travel is the only thing you buy that makes you richer and free” 
+                          
+                          </ul> 
+                          </p>
+                        <button type = "button" class = "btn">Enjoy!</button>
+                    </div>
+                </article>
+                <!-- end of single service -->
+            </div>
+        </section>
+
+        <section class = "rooms sec-width" id = "rooms">
+            <div class = "title">
+                <h2>rooms</h2>
+            </div>
+            <div class = "rooms-container">
+                <!-- single room -->
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "images/img1.jpg" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                        <h3>Luxury Rooms</h3>
+                        <ul>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Lorem ipsum dolor sit amet.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Lorem ipsum dolor sit amet.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Lorem ipsum dolor sit amet.
+                            </li>
+                        </ul>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus exercitationem repellendus maxime ullam tempore architecto provident unde expedita quam beatae, dolore eligendi molestias sint tenetur incidunt voluptas. Unde corporis qui iusto vitae. Aut nesciunt id iste, cum esse commodi nemo?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla corporis quasi officiis cumque, fugiat nostrum sunt, tempora animi dicta laborum beatae ratione doloremque. Delectus odio sit eius labore, atque quo?</p>
+                        <p class = "rate">
+                            <span>$99.00 /</span> Per Night
+                        </p>
+                        <button type = "button" class = "btn">book now</button>
+                    </div>
+                </article>
+                <!-- end of single room -->
+                <!-- single room -->
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "images/img2.jpg" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                        <h3>Luxury Rooms</h3>
+                        <ul>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Lorem ipsum dolor sit amet.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Lorem ipsum dolor sit amet.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Lorem ipsum dolor sit amet.
+                            </li>
+                        </ul>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus exercitationem repellendus maxime ullam tempore architecto provident unde expedita quam beatae, dolore eligendi molestias sint tenetur incidunt voluptas. Unde corporis qui iusto vitae. Aut nesciunt id iste, cum esse commodi nemo?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla corporis quasi officiis cumque, fugiat nostrum sunt, tempora animi dicta laborum beatae ratione doloremque. Delectus odio sit eius labore, atque quo?</p>
+                        <p class = "rate">
+                            <span>$99.00 /</span> Per Night
+                        </p>
+                        <button type = "button" class = "btn">book now</button>
+                    </div>
+                </article>
+                <!-- end of single room -->
+                <!-- single room -->
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "images/img3.jpg" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                        <h3>Luxury Rooms</h3>
+                        <ul>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Lorem ipsum dolor sit amet.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Lorem ipsum dolor sit amet.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Lorem ipsum dolor sit amet.
+                            </li>
+                        </ul>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus exercitationem repellendus maxime ullam tempore architecto provident unde expedita quam beatae, dolore eligendi molestias sint tenetur incidunt voluptas. Unde corporis qui iusto vitae. Aut nesciunt id iste, cum esse commodi nemo?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla corporis quasi officiis cumque, fugiat nostrum sunt, tempora animi dicta laborum beatae ratione doloremque. Delectus odio sit eius labore, atque quo?</p>
+                        <p class = "rate">
+                            <span>$99.00 /</span> Per Night
+                        </p>
+                        <button type = "button" class = "btn">book now</button>
+                    </div>
+                </article>
+                <!-- end of single room -->
+            </div>
+        </section>
+
+
+        <section class = "customers" id = "customers">
+            <div class = "sec-width">
+                <div class = "title">
+                    <h2>customers</h2>
+                </div>
+                <div class = "customers-container">
+                    <!-- single customer -->
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                        <h3>We Loved it</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat beatae veritatis provident eveniet praesentium veniam cum iusto distinctio esse, vero est autem, eius optio cupiditate?</p>
+                        <img src = "images/cus1.jpg" alt = "customer image">
+                        <span>Customer Name, Country</span>
+                    </div>
+                    <!-- end of single customer -->
+                    <!-- single customer -->
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                        <h3>Comfortable Living</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat beatae veritatis provident eveniet praesentium veniam cum iusto distinctio esse, vero est autem, eius optio cupiditate?</p>
+                        <img src = "images/cus2.jpg" alt = "customer image">
+                        <span>Customer Name, Country</span>
+                    </div>
+                    <!-- end of single customer -->
+                    <!-- single customer -->
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                        <h3>Nice Place</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat beatae veritatis provident eveniet praesentium veniam cum iusto distinctio esse, vero est autem, eius optio cupiditate?</p>
+                        <img src = "images/cus3.jpg" alt = "customer image">
+                        <span>Customer Name, Country</span>
+                    </div>
+                    <!-- end of single customer -->
+                </div>
+            </div>
+        </section>
+        <!-- end of body content -->
+        
+        <!-- footer -->
+        <section class = "rooms sec-width" id = "rooms">
+            <div class = "title">
+                <h2>Map/Location</h2>
+            </div>
+            
+        
+        <div id= "boo" class = "book">
+      
+            <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d3532.041392236404!2d85.3096001224762!3d27.71600824105991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x39eb18e2c1893655%3A0x1c30615ec6646dd5!2sThamel%20Bus%20Stop%2C%20Lainchaur%20Road%2C%20Kathmandu!3m2!1d27.718182199999998!2d85.31201229999999!4m5!1s0x39eb18fcdd47ffe9%3A0x9ed32619374a53a2!2sTom%20and%20Jerry&#39;s%2C%20Chaksibari%20Marg%2C%20Kathmandu%2044600!3m2!1d27.715514!2d85.310423!5e0!3m2!1sen!2snp!4v1648687321923!5m2!1sen!2snp" 
+            width="1150" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <br>
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br>
+                <!-- footer -->
+                <footer class = "footer">
+                    <div class = "footer-container">
+                        <div>
+                            <h2>About Us </h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque sapiente mollitia doloribus provident? Eos quisquam aliquid vel dolorum, impedit culpa.</p>
+                            <ul class = "social-icons">
+                                <li class = "flex">
+                                    <i class = "fa fa-twitter fa-2x"></i>
+                                </li>
+                                <li class = "flex">
+                                    <i class = "fa fa-facebook fa-2x"></i>
+                                </li>
+                                <li class = "flex">
+                                    <i class = "fa fa-instagram fa-2x"></i>
+                                </li>
+                            </ul>
+                        </div>
+        
+                        <div>
+                            <h2>Useful Links</h2>
+                            <a href = "#">Blog</a>
+                            <a href = "#">Rooms</a>
+                            <a href = "#">Subscription</a>
+                            <a href = "#">Gift Card</a>
+                        </div>
+        
+                        <div>
+                            <h2>Privacy</h2>
+                            <a href = "#">Career</a>
+                            <a href = "#">About Us</a>
+                            <a href = "#">Contact Us</a>
+                            <a href = "#">Services</a>
+                        </div>
+        
+                        <div>
+                            <h2>Have A Question</h2>
+                            <div class = "contact-item">
+                                <span>
+                                    <i class = "fas fa-map-marker-alt"></i>
+                                </span>
+                                <span>
+                                    203 Fake St.Mountain View, San Francisco, California, USA
+                                </span>
+                            </div>
+                            <div class = "contact-item">
+                                <span>
+                                    <i class = "fas fa-phone-alt"></i>
+                                </span>
+                                <span>
+                                    +84545 37534 48
+                                </span>
+                            </div>
+                            <div class = "contact-item">
+                                <span>
+                                    <i class = "fas fa-envelope"></i>
+                                </span>
+                                <span>
+                                    info@domain.com
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                <script>
+                const navBtn = document.getElementById('nav-btn');
+const cancelBtn = document.getElementById('cancel-btn');
+const sideNav = document.getElementById('sidenav');
+const modal = document.getElementById('modal');
+
+navBtn.addEventListener("click", function(){
+    sideNav.classList.add('show');
+    modal.classList.add('showModal');
+});
+
+cancelBtn.addEventListener('click', function(){
+    sideNav.classList.remove('show');
+    modal.classList.remove('showModal');
+});
+
+window.addEventListener('click', function(event){
+    if(event.target === modal){
+        sideNav.classList.remove('show');
+        modal.classList.remove('showModal');
+    }
+});</script>
+                <!-- end of footer -->
+                
+                <script src="script.js"></script>
+            </body>
+        </html>
