@@ -5,19 +5,29 @@
     --yellow: #f9d342;
     --dark: #292826;
 }
+
 *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     font-family: 'Playfair Display', serif;
 }
+
+
 html{
     scroll-behavior: smooth;
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
 }
 body{
     line-height: 1.6;
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
 }
 .btn{
+    
     font-size: 16px;
     text-transform: uppercase;
     font-weight: 600;
@@ -174,8 +184,9 @@ img{
     color: #fff;
 }
 @media(max-width: 400px){
+   
     .sidenav{
-        width: 100vw;
+        width: 5cm;
     }
 }
 
@@ -466,10 +477,3 @@ img{
     z-index: 5;
 }
 
-.boo
-{
-    #boo {
-        margin-top: 100%;
-        padding-bottom: 25%;
-       } 
-}
