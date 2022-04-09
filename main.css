@@ -243,11 +243,14 @@ img{
     }
 }
 @media(max-width: 500px){
+    
     .title h2{
         font-size: 24px;
     }
 }
 
+       
+    
 @media(max-width: 500px){
     .book{
         padding-left: 20px;
@@ -260,6 +263,9 @@ img{
 /* room */
 
 .rooms{
+
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/23.jpg") center/cover no-repeat fixed;
+ 
     margin: 40px 0;
 }
 .room{
@@ -405,7 +411,11 @@ img{
 .footer{
     background: var(--dark);
     color: #fff;
-    text-align: center;
+    text-align: left;
+    margin-left:-100%;
+    margin-right:-100%;
+   
+   
 }
 .footer-container{
     width: 85vw;
@@ -424,10 +434,11 @@ img{
     list-style: none;
     display: flex;
     justify-content: center;
-    padding: 15px 0;
+    padding: 50px 0;
+ 
 }
 .social-icons li{
-    margin: 0 10px;
+    margin: 0 100px;
     width: 50px;
     height: 50px;
     background: #2e2e2e;
@@ -442,10 +453,16 @@ img{
 .contact-item span{
     display: block;
 }
+@media(min-width: 300px){
+    .footer-container{
+        display: grid;
+        grid-template-columns: repeat(1, 3fr);
+        grid-gap: 20px;
+    }
 @media(min-width: 900px){
     .footer-container{
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         grid-gap: 20px;
     }
 }
@@ -476,4 +493,3 @@ img{
     left: 0;
     z-index: 5;
 }
-
